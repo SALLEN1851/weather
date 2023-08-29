@@ -20,7 +20,8 @@ body {
 
 #weatherMessage {
   font-size: 5rem;
-
+  max-width: 400px;
+  margin: auto;
 }
 
 .hidden {
