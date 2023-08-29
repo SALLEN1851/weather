@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const city = document.getElementById('cityInput').value;
         fetchWeatherData(city);
+        // Show the .weather-info element
+        document.querySelector('.weather-info').style.display = 'block';
     });
 
     // Event delegation for searchForm2

@@ -30,18 +30,6 @@ body {
 
 #weatherMessage {
   font-size: 5rem;
-<<<<<<< HEAD
-  color: #FFF;
-}
-
-.weather-info {
-  border: 20px solid black;
-  border-radius: 50px;
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px 20px;
-}
-=======
 
 }
 
@@ -51,5 +39,5 @@ body {
     width: 600px;
     margin: 0 auto;
     padding: 20px 20px;
+    display: none;
 }
->>>>>>> 7e112458e5edc2b66e7036ee583325b357a4fa82
