@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+tdocument.addEventListener('DOMContentLoaded', function () {
     // Initial search form event listener
     document.getElementById('searchForm').addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the default form submission
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const messageElement = document.getElementById('weatherMessage');
                 // Check the condition and update the messageElement's text
-                messageElement.innerText = condition.includes('rain') ? "Grab the umbrella" : "It's a nice day to ride a bike";
+                messageElement.innerText = condition.includes('rain') ? "Better grab the umbrella, it's not looking great." : "It's a nice day out for a bike ride!";
 
                 if (city === document.getElementById('cityInput').value) {
                     // Hide the initial search form
