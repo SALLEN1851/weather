@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Initial search form event listener
-    document.getElementById('searchForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the default form submission
+    const initialSearchForm = document.getElementById('searchForm');
+    const weatherInfo = document.querySelector('.weather-info'); // Declare the weatherInfo variable here
+    
+    initialSearchForm.addEventListener('submit', function (event) {
+        event.preventDefault();
 
         const city = document.getElementById('cityInput').value;
         fetchWeatherData(city);
+
         // Show the .weather-info element
-        document.querySelector('.weather-info').style.display = 'block';
+        weatherInfo.classList.remove('hidden');
+        weatherInfo.classList.add('weather-info');
     });
 
     // Event delegation for searchForm2
@@ -33,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const wind_dir = data.current.wind_dir;
                 const location = data.location.name;
 
+
+
                 // Update the weather information display
                 document.getElementById('location').innerText = location;
                 document.getElementById('condition-icon').src = `https:${icon}`;
@@ -41,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('wind_mph').innerText = `Wind Speed ${wind_mph} MPH`;
                 document.getElementById('wind_dir').innerText = `Wind Direction ${wind_dir}`;
 
+                 // Remove the 'hidden' class from the weatherInfo element
+                 weatherInfo.classList.remove('hidden');
+
                 const messageElement = document.getElementById('weatherMessage');
                 // Check the condition and update the messageElement's text
                 messageElement.innerText = condition.includes('rain') ? "Better grab the umbrella, it's not looking great." : "It's a nice day out for a bike ride!";
@@ -48,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (city === document.getElementById('cityInput').value) {
                     // Hide the initial search form
                     document.getElementById('searchForm').style.display = 'none';
+
+               
+
 
                     // Create a new search form
                     const newSearchForm = document.createElement('form');
