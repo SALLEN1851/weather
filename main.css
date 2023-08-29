@@ -1,17 +1,17 @@
 
 
 .weather-wrapper {
-  height: 100vh;
-  display: flex important!;
+  display: flex !important;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   text-align: center;
+
 }
 
+.wrapper {
+  background-color: lightgray;
+  margin: 50px 50px;
 
-body {
- color: #686868;
 }
 
 #searchForm2 {
@@ -42,4 +42,12 @@ body {
 
 #searchForm2 {
   margin-top: 3rem;
+}
+
+.bg-body-tertiary {
+  background-color: lightgray !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
 }
