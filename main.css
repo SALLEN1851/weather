@@ -14,11 +14,10 @@
  * {
  margin: 0 auto;
  text-align: center;
- background-color: #292929;
  }
 
 body {
- color: #FFF;
+ color: #686868;
 }
 
 
@@ -28,6 +27,5 @@ body {
 
 #weatherMessage {
   font-size: 5rem;
-  color: #FFF;
 
 }
