@@ -1,7 +1,3 @@
-/*
- * Globals
- */
-
 
 /* Custom default button */
 .btn-light,
@@ -18,11 +14,14 @@
  * {
  margin: 0 auto;
  text-align: center;
- background-color: #292929;
  }
 
 body {
+<<<<<<< HEAD
   color: #FFF;
+=======
+ color: #686868;
+>>>>>>> 7e112458e5edc2b66e7036ee583325b357a4fa82
 }
 
 #searchForm2 {
@@ -31,6 +30,7 @@ body {
 
 #weatherMessage {
   font-size: 5rem;
+<<<<<<< HEAD
   color: #FFF;
 }
 
@@ -41,3 +41,15 @@ body {
   margin: 0 auto;
   padding: 20px 20px;
 }
+=======
+
+}
+
+.weather-info {
+    border: 20px solid black;
+    border-radius: 50px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+>>>>>>> 7e112458e5edc2b66e7036ee583325b357a4fa82
