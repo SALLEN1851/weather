@@ -1,15 +1,4 @@
 
-/* Custom default button */
-.btn-light,
-.btn-light:hover,
-.btn-light:focus {
-  color: #FFF;
-}
-
-
-/*
- * Base structure
- */
 
  * {
  margin: 0 auto;
@@ -17,11 +6,7 @@
  }
 
 body {
-<<<<<<< HEAD
-  color: #FFF;
-=======
  color: #686868;
->>>>>>> 7e112458e5edc2b66e7036ee583325b357a4fa82
 }
 
 #searchForm2 {
