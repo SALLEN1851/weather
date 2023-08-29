@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('condition-icon').src = `https:${icon}`;
                 document.getElementById('temperature').innerText = `Current temperature: ${temperature}°F`;
                 document.getElementById('condition').innerText = `Current condition: ${condition}`;
-                document.getElementById('wind_mph').innerText = `Wind Speed ${wind_mph} MPH`;
-                document.getElementById('wind_dir').innerText = `Wind Direction ${wind_dir}`;
+                document.getElementById('wind_mph').innerText = `Wind Speed: ${wind_mph} MPH`;
+                document.getElementById('wind_dir').innerText = `Wind Direction: ${wind_dir}`;
 
                  // Remove the 'hidden' class from the weatherInfo element
                  weatherInfo.classList.remove('hidden');
