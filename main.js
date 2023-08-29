@@ -1,4 +1,4 @@
-tdocument.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     // Initial search form event listener
     document.getElementById('searchForm').addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the default form submission
