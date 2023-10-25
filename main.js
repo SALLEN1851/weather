@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Hide the initial search form
                     document.getElementById('searchForm').style.display = 'none';
 
-               
+               // TEST
 
 
                     // Create a new search form
