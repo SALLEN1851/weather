@@ -11,7 +11,9 @@
 
 .wrapper {
   background-color: #FFF;
-  margin: 40% 50px 50px 50px;
+  margin: 40% 30px;
+  border: solid lightgray 10px;
+  border-radius: 50px;
 
 }
 
