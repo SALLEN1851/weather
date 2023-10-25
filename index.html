@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Display</title>
+    <link href="main.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <link href="dist/output.css" rel="stylesheet">
+  </head>
+  <body class="wrapper">
+   
+  <main class="weather-wrapper">
+    <form id="searchForm">
+        <h1 class="fw-bold">Should I ride my bike today? </h1>
+        <p>Enter your address below to check</p>
+        <input type="text" id="cityInput" placeholder="Enter your address">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    <h1 id="weatherMessage"></h1>
+    <div class="weather-info hidden">
+    <h1 id="location"></h1>
+    <img id="condition-icon" />
+    <h1 id="temperature"></h1>
+    <h2 id="condition"></h2>
+    <h2 id="wind_dir">
+    </h2>
+    <h2 id="wind_mph">
+    </h2>
+</div>
+    <form id="searchForm2">
+        <p><strong>Check another location?</strong></p>
+        <input type="text" id="cityInput2" placeholder="Enter your address">
+        <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="submit">Search</button>
+        </form>
+  </main>
+
+  <aside>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+  </aside>
+
+
+<script src="main.js"></script>
+    </body>
+</html>
+
+
